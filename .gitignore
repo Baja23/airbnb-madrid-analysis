@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+.DS_Store
+config.ini
+.env
+globalne_pakiety_backup.txt

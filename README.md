@@ -1,14 +1,10 @@
-Analiza ofert wynajmu krótkoterminowego z serwisu Airbnb w Madrycie
+Analiza cen Airbnb w Madrycie
 
-Celem projektu jest stworzenie raportu analitycznego oraz interaktywnego dashboardu pomagającego zrozumieć wpływ różnych aspektów ofert na ceny wynajmu.
-Raport będzie skierowany przede wszystkim do klientów, aby mogli oszacować ile pieniędzy będą musieli przeznaczyć na nocleg w Madrycie, ale też do potencjalnych inwestorów i wynajmujących,
-aby mogli lepiej zrozumieć rynek wynajmu krótkoterminowego w Madrycie. 
+Analiza danych z Inside Airbnb za okres 12 ostatnich miesięcy (pierwszy plik jest z 12.09.2024, ostatni z 12.06.2025). Celem projektu jest przeanalizowanie tego jak różne czynniki (dzielnica, status Superhosta, typ pokoju/nieruchomości, etc.) wpływają na ceny ofert. Raport ten ma za zadanie pomóc potencjalnym inwestorom w wyborze odpowiedniej nieruchomości oraz ustaleniu ceny wynajmu zgodnej z rynkiem.
 
-Kluczowe pytania, na jakie ten raport ma za zadanie odpowiedzieć to: 
-
-Jaka jest średnia i mediana cen dla każdej dzielnicy Madrytu?
-Jaka jest zależność między typem nieruchomości oraz pokoju, a ceną?
-Czy istnieje zależność między ceną a liczbą opinii lub oceną lokalizacją?
-Jak zmieniają się ceny na przestrzeni roku?
-Jaki jest profil "super-hostów' czyli gospodarzy z wieloma nieruchomościami i gdzie koncentruje się ich działalność?
-
+Jak Uruchomić (Setup & Usage) - instrukcja krok po kroku: 
+    Sklonuj repozytorium. 
+    Stwórz i aktywuj środowisko wirtualne (python -m venv venv, source ...).
+    Zainstaluj zależności (pip install -r requirements.txt).
+    Uruchom bazę danych (docker-compose up -d).
+    Uruchom potok danych (python scripts/load_raw_data.py, etc.).
