@@ -66,11 +66,26 @@ def Load_to_quarantine_table(df_file, engine, reason):
 
      
 #function that loads data from a csv file to database
-def load_data(file_path, table_name, connection):
+def load_data(file_path, connection):
         df = pd.read_csv(file_path)
-        print('File read correctly.')
+        messagebox.showinfo('Correct', 'File read correctly.')
+        while True: 
+            year= input('Please enter the year associated with this data in the format YYYY: ')
+            if len(year) == 4 and year.isdigit() and year[0] + year[1] == '20':
+                df['year'] = year
+                break
+            else:
+                print('Year must be in the format YYYY (e.g., 2023).')
+        while True:
+            quarter= input('Please enter the quarter associated with this data in the format QX (X being the quarter number): ').capitalize()
+            if quarter in ['Q1', 'Q2', 'Q3', 'Q4']:
+                df['quarter'] = quarter
+                break
+            else:
+                print('Quarter must be in the format QX where X is the quarter number (1-4).')
+        table_name = 'raw' + '_' + df.iloc[0]['quarter'] + '_' + df.iloc[0]['year']
         df.to_sql(table_name, con=connection, if_exists='replace', index=False)
-        print(f'File loaded to {table_name} table.')
+        messagebox.showinfo('Correct', f'File loaded to {table_name} table.')
     
 def main():
     #creating a tkinter object and hidding the main window
@@ -90,13 +105,11 @@ def main():
     #file selection
     file_path = file_select()
     try:
-          #inputting the table name
-          table_name = input('Please type the name of the table to which you would like to load the selected csv file')
-
           #loading data from csv file to the database
-          load_data(file_path, table_name, engine)
+          load_data(file_path, engine)
     except AssertionError as e: 
          messagebox.showerror('Warning!', 'Quality tests have failed')
          Load_to_quarantine_table()
+         root.destroy()
 if __name__ == '__main__':
     main()
