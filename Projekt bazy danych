@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Strona-1" id="rWih_Hb4eTgnKodPQsrw">
+    <mxGraphModel dx="776" dy="1108" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bVimqmyCw8vp9S5-iUEu-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;fact_quarterly_listings&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;listingsId&lt;br&gt;quarter&lt;br&gt;year&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;listingsId&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;price&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="120" width="166" x="410" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bVimqmyCw8vp9S5-iUEu-26" edge="1" parent="1" source="bVimqmyCw8vp9S5-iUEu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" target="bVimqmyCw8vp9S5-iUEu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bVimqmyCw8vp9S5-iUEu-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;dim_listings&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;listings_id&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;host_id&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;description&lt;br&gt;property_type&lt;br&gt;room_type&lt;br&gt;accommodates&lt;br&gt;bathrooms&lt;br&gt;bathrooms_text&lt;br&gt;bedrooms&lt;br&gt;beds&lt;br&gt;amenities&lt;br&gt;minimum_nights&lt;br&gt;maximum_nights&lt;br&gt;has_availability&lt;br&gt;instant_bookable&lt;br&gt;neighbourhood_cleansed&lt;br&gt;neighbourhood_group_cleansed&lt;br&gt;availability_30&lt;br&gt;availability_90&lt;br&gt;availability_365&lt;br&gt;number_of_reviews&lt;br&gt;review_scores_rating&lt;br&gt;review_scores_accuracy&lt;br&gt;review_scores_cleanliness&lt;br&gt;review_scores_checkin&lt;br&gt;review_scores_communication&lt;br&gt;review_scores_location&lt;br&gt;review_scores_value&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="520" width="230" x="220" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="bVimqmyCw8vp9S5-iUEu-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;dim_hosts&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;Id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;host_name&lt;br&gt;host_since&lt;br&gt;host_location&lt;br&gt;host_about&lt;br&gt;host_response_time&lt;br&gt;host_response_rate&lt;br&gt;host_acceptance_rate&lt;br&gt;host_is_superhost&lt;br&gt;host_listings_count&lt;br&gt;host_total_listings_count&lt;br&gt;host_verifications&lt;br&gt;host_has_profile_pic&lt;br&gt;host_identity_verified&lt;br&gt;calculated_host_listings_count&lt;br&gt;calculated_host_listings_count_entire_homes&lt;br&gt;calculated_host_listings_count_private_rooms&lt;br&gt;calculated_host_listings_count_shared_rooms&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="340" width="290" x="580" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bVimqmyCw8vp9S5-iUEu-27" edge="1" parent="1" source="bVimqmyCw8vp9S5-iUEu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.004;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" target="bVimqmyCw8vp9S5-iUEu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
