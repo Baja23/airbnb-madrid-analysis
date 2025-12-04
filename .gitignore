@@ -2,3 +2,5 @@ venv/
 __pycache__/
 .env
 Drafts/
+load_raw_data_with_dqtests.py
+additional_notebook.ipynb
