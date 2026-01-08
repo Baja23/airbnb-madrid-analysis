@@ -369,7 +369,7 @@ DROP TABLE IF EXISTS fact_listings CASCADE;
 CREATE TABLE fact_listings AS
 SELECT
     id AS listings_id,
-    quarter,
+    REPLACE(quarter, 'Q', '')::INTEGER AS quarter,
     year::INTEGER,
     REPLACE(REPLACE(price, '$', ''), ',', '')::NUMERIC AS price
 FROM all_raw_listings_view

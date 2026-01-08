@@ -4,3 +4,6 @@ __pycache__/
 Drafts/
 load_raw_data_with_dqtests.py
 additional_notebook.ipynb
+clean_data.parquet
+Dokumentacja.docx
+airbnb_dashboard.pbix
